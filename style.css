@@ -1,0 +1,80 @@
+body{
+    background-color: antiquewhite;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.nellyzen{
+    font-size: 2rem;
+}
+.btnbuscar{
+    background-color: rgb(228, 167, 147) ;
+    border-radius: 1rem;
+    border-color: rgb(216, 211, 211);
+}
+nav{
+    opacity: 0.6;
+    text-shadow: 1;
+    
+}
+
+a{
+    color: black;
+    font-size: 1.5rem;
+}
+.nav-link{
+    color: black;
+}
+
+
+.carta{
+    align-items: center;
+    display:flex ;
+    justify-content: center;
+    margin-top: 10rem;
+    border-radius: 0.5rem;
+   
+}
+
+footer { 
+    width: 100%;
+    margin-top: 3rem;
+    position:fixed;
+    bottom: 0;
+   }
+
+.fondocarta{
+    background-color: antiquewhite;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.hebreo{
+    max-height: 683px;
+    max-width: 1024px;
+}
+
+.centrarboton{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 167, 147);
+    border-radius: 1rem;
+    border-color: rgb(216, 211, 211);
+}
+
+.fa{
+    font-size: 2rem;
+}
+ 
+.cartota{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrocss{
+    margin-bottom: 5rem;
+}
