@@ -67,9 +67,11 @@ const adquirirProducto = (producto) => {
       id: producto.id,
     });
   }
+  localStorage.clear()
+localStorage.setItem("array", carro);
 };
 
-btnmostrar.addEventListener("click", () => { 
+/* btnmostrar.addEventListener("click", () => { 
 
   carro.forEach((prodcarrito) => {
   let renderizarcarro = document.createElement("div");
@@ -93,4 +95,8 @@ btnmostrar.addEventListener("click", () => {
     contcarro.append(renderizarcarro);
 
 });
+}); */
+
+btnmostrar.addEventListener("click", () => {
+    location.href ="http://127.0.0.1:5500/src/carrito.html"; 
 });
