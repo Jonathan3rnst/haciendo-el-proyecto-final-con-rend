@@ -68,8 +68,44 @@ const adquirirProducto = (producto) => {
     });
   }
   localStorage.clear()
-localStorage.setItem("array", carro);
+localStorage.setItem("array",JSON.stringify(carro));
 };
+
+
+btnmostrar.addEventListener("click", () => {
+  location.href ="http://127.0.0.1:5500/src/carrito.html"; 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* btnmostrar.addEventListener("click", () => { 
 
@@ -96,7 +132,3 @@ localStorage.setItem("array", carro);
 
 });
 }); */
-
-btnmostrar.addEventListener("click", () => {
-    location.href ="http://127.0.0.1:5500/src/carrito.html"; 
-});
