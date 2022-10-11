@@ -78,3 +78,20 @@ footer {
 .carrocss{
     margin-bottom: 5rem;
 }
+
+#noti{
+    
+        position: absolute;
+        
+        top: 15px;
+        background: red;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        
+      
+}

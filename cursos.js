@@ -72,11 +72,26 @@ localStorage.setItem("array",JSON.stringify(carro));
 };
 
 
-btnmostrar.addEventListener("click", () => {
+/* btnmostrar.addEventListener("click", () => {
   location.href ="http://127.0.0.1:5500/src/carrito.html"; 
 });
-
-
+ */
+btnmostrar.addEventListener("click", () => {
+  carro.length === 0 ? alert("El carrito esta vacio"):
+  Swal.fire({
+    title: "Esa es su compra ?",
+    input: "text",
+    showCancelButton: true,
+    confirmButtonText: "Aceptar",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: `${result.value}`,
+      });
+      location.href ="http://127.0.0.1:5500/src/carrito.html"
+    }
+  });
+});
 
 
 
