@@ -95,3 +95,15 @@ footer {
         
       
 }
+
+#carroContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#compra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -67,6 +67,22 @@ const adquirirProducto = (producto) => {
       id: producto.id,
     });
   }
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 2000,
+    
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  Toast.fire({
+    icon: 'success',
+    title: 'Producto agregado'
+  })
   localStorage.clear()
 localStorage.setItem("array",JSON.stringify(carro));
 };
@@ -80,7 +96,7 @@ btnmostrar.addEventListener("click", () => {
   carro.length === 0 ? alert("El carrito esta vacio"):
   Swal.fire({
     title: "Esa es su compra ?",
-    input: "text",
+    
     showCancelButton: true,
     confirmButtonText: "Aceptar",
   }).then((result) => {
