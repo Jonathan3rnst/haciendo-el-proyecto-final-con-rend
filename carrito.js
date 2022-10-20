@@ -1,3 +1,5 @@
+let total = document.getElementById("mostrarTotal");
+
 btncompra.addEventListener("click", () => {
     let local = JSON.parse(localStorage.getItem("array"));
     
@@ -24,15 +26,20 @@ btncompra.addEventListener("click", () => {
       `;
       compra.append(renderizarcarro);
     } 
-    
-    
     )
     
     
-    let total = document.getElementById("mostrartotal")
-    let suma = local.reduce((a , b) => a + b, 0 );
-    console.log(suma);
+    
+    
+    
+    let suma = local.map(prodcarro => prodcarro.precio).reduce((a , b) => a + b , 0 )
+    
+    let renderizartotal = document.createElement("div");
+    renderizartotal.innerHTML = `
+          <h2>Total adquirido: $${suma}</h2>
+    `;
+    total.append(renderizartotal);
 
-    localStorage.clear()
+    
     
   });

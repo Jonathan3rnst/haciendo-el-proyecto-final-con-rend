@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "nombre": "Masoterapia",
+      "precio": 2000,
+      "img": "https://eceres.org/wp-content/uploads/2021/06/Masoterapia--1024x683.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Pendulo Hebreo",
+      "precio": 4000,
+      "img": "https://radiestesiamoderna.com/wp-content/uploads/2017/03/pendulohebreo.png"
+    },
+  
+    {
+      "id": 3,
+      "nombre": "Aromaterapia",
+      "precio": 2400,
+      "img": "https://jardindelzen.com/wp-content/uploads/2016/12/historia-aromaterapia-1024x683.jpg"
+    },
+  
+    {
+      "id": 4,
+      "nombre": "Reiki",
+      "precio": 2000,
+      "img": "https://www.tekcrispy.com/wp-content/uploads/2022/06/reiki-manos-1024x683.jpg"
+    }
+  ]
