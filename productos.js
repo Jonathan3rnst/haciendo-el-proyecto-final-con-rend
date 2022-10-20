@@ -1,12 +1,12 @@
-let productos = document.getElementById("idProducto");
+let products = document.getElementById("mostrarProducto");
 fetch(
   "https://raw.githubusercontent.com/Jonathan3rnst/haciendo-el-proyecto-final-con-rend/main/data.json"
 )
   .then((traer) => traer.json())
   .then((traido) => {
     traido.forEach((unidad) => {
-      const div = document.createElement("div");
-      div.innerHTML = `
+      const verProducto = document.createElement("div");
+      verProducto.innerHTML = `
     <div class="fondocarta card" style="width: 18rem;">
   <img src="${unidad.img}" class=" hebreo card-img-top" alt="...">
   <div class="card-body">
@@ -19,6 +19,7 @@ fetch(
   </div>
   </div>
     `;
-      productos.append("div");
+      products.append(verProducto);
+      
     });
   });
